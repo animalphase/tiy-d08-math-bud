@@ -82,7 +82,7 @@ input:focus, input:active {
 .operator-signifier {
   flex: 0 0 4rem;
   margin: 0;
-  padding: 1rem 0;
+  padding: 2.15rem 0 0 0;
   font-size: 3rem;
   color: #fff;
   font-weight: bold;
