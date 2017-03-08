@@ -14,27 +14,44 @@ html {
 body {
   font-size: 2rem;
   font-family: sans-serif;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .calculator {
-  padding: 4rem 10%;
+  padding: 2rem 6% 4rem 6%;
   background: #6EB6FF;
   max-width: 600px;
-  margin: 10rem auto;
+  margin: 5rem auto;
   border-radius: 2rem;
-  box-shadow: 0 2rem 0 0 #658ccd,
+  box-shadow: 0 .25rem 0 0 #658ccd,
+                0 .5rem 0 0 #5f85c4,
+                0 1.25rem 0 0 #577dba,
+                0 1.5rem 0 0 #5075b0,
+                0 1.75rem 0 0 #4a6ea8,
+                0 2rem 0 0 #4568a1,
                 0 2rem 2px 0rem rgba(137,136,179,1),
                 0 2rem 2rem -.5rem rgba(137,136,179,1),
                 0 2rem 8rem -2rem rgba(175,170,179,1);
 }
 
+
+h1 {
+  color: #4a6ea8;
+  font-size: 2.3rem;
+  margin: 0 0 2rem 0;
+  padding: 0;
+}
+
 form {
   box-sizing: border-box;
+}
+form * {
+  outline: none;
 }
 
 .input-containter {
   display: flex;
+  width: 100%;
 }
 
 .input-field {
@@ -43,23 +60,29 @@ form {
 
 label {
   display: block;
-  color: white;
+  color: #658ccd;
   font-size: 1.3rem;
   text-transform: uppercase;
 }
 
 input {
+  box-sizing: border-box;
   appearance: none;
   font-size: 2rem;
   padding: 1rem;
-  border: 4px solid #658ccd;
+  border-radius: .5rem;
+  border: .4rem solid #658ccd;
+  display: block;
+  width: 100%;
+}
+input:focus, input:active {
+  border-color: #ffa7dd;
 }
 
 .operator-signifier {
   flex: 0 0 4rem;
   margin: 0;
   padding: 1rem 0;
-  width: 3rem;
   font-size: 3rem;
   color: #fff;
   font-weight: bold;
@@ -80,8 +103,9 @@ input {
   font-weight: bold;
   background: #90F2FF;
   color: #658ccd;
-  border: 4px solid transparent;
+  border: .4rem solid transparent;
   border-radius: .5rem;
+  text-shadow: 0 1px 0 #c1f7ff;
   box-shadow: 0 .2rem 0 #6ec2cd,
                 0 .4rem 0 #65b7c2,
                 0 .6rem 0 #5aa8b3,
@@ -89,10 +113,24 @@ input {
                 0 .8rem 5px rgba(53,106,129,.5);
   cursor: pointer;
 }
+.btn:focus, .btn:active {
+  border-color: #ffa7dd;
+}
 
 .output-field {
-  background: #7098DA;
+  background: #565b80;
   margin: 1rem 0 0 0;
   padding: 1rem;
   color: #fff;
+  border-radius: .2rem;
+  box-shadow: 0 1px 0 #88c3ff,
+                inset 0 .2rem .6rem -.1rem rgba(0,0,0,.3);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: .65rem;
+  }
 }
