@@ -5,6 +5,7 @@
 #6EB6FF
 #7098DA
 #658ccd
+#ffa7dd
 */
 
 html {
@@ -17,8 +18,13 @@ body {
   padding: 1rem;
 }
 
-.calculator {
-  padding: 2rem 6% 4rem 6%;
+::selection {
+  background: #ffa7dd;
+  color: #fff;
+}
+
+.calculator  {
+  padding: 2.75rem 6% 4rem 6%;
   background: #6EB6FF;
   max-width: 600px;
   margin: 5rem auto;
@@ -90,7 +96,7 @@ input:focus, input:active {
 }
 
 .btns-container {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   display: flex;
 }
 
@@ -113,6 +119,9 @@ input:focus, input:active {
                 0 .8rem 5px rgba(53,106,129,.5);
   cursor: pointer;
 }
+.btn:first-child {
+  margin-left: 0;
+}
 .btn:focus, .btn:active {
   border-color: #ffa7dd;
 }
@@ -120,7 +129,7 @@ input:focus, input:active {
 .output-field {
   background: #565b80;
   margin: 1rem 0 0 0;
-  padding: 1rem;
+  padding: 1.4rem;
   color: #fff;
   border-radius: .2rem;
   box-shadow: 0 1px 0 #88c3ff,
